@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDA - Presentación Institucional 2026</title>
+    <meta name="description" content="Soluciones Confiables desde 1986. Servicios profesionales de IT, Software Factory y QA para LATAM y Europa.">
+    
+    <!-- Google Fonts: Inter (Professional, clean, readable) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Configuration & Variables -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cda: {
+                            blue: '#007dc4',
+                            orange: '#f6921e',
+                            dark: '#1a202c',
+                            light: '#f8fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Styles for Printing and Specific Layouts */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .cda-gradient-text {
+            background: linear-gradient(90deg, #007dc4 0%, #005a8d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .deco-pattern {
+            background-image: radial-gradient(#007dc4 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.05;
+        }
+
+        @media print {
+            .no-print { display: none; }
+            body { background: white; }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 flex flex-col min-h-screen">
+
+    <!-- HEADER / HERO SECTION -->
+    <header class="relative bg-white border-b border-gray-100 shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo CDA -->
+            <div class="flex items-center">
+                <!-- Solución robusta: Usando endpoint thumbnail + Fallback a texto si falla -->
+                <img src="https://drive.google.com/thumbnail?id=1UomK2PgHz09yWMXjdLrhDADxWFqbfZE4&sz=w1000" 
+                     alt="CDA Soluciones Confiables" 
+                     onerror="this.style.display='none'; document.getElementById('logo-fallback-text').classList.remove('hidden');"
+                     class="h-12 md:h-16 w-auto object-contain">
+                
+                <!-- Fallback Text (Solo aparece si la imagen falla) -->
+                <div id="logo-fallback-text" class="hidden">
+                    <span class="text-2xl font-bold text-cda-blue tracking-tighter">CDA</span>
+                    <span class="text-xs text-cda-orange font-semibold tracking-wide uppercase block leading-none">Soluciones Confiables</span>
+                </div>
+            </div>
+            <!-- Institutional Navigation / Contact -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+                <span>#expertosensoftware</span>
+                <span class="bg-cda-blue text-white px-4 py-1.5 rounded-full text-xs uppercase tracking-wider font-semibold">
+                    Institucional 2026
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO AREA -->
+        <section class="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+            <!-- Decorative Background Element -->
+            <div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none z-0">
+                <img src="https://drive.google.com/thumbnail?id=1vDq_GDXI27ICa49TRebwZnS8kXinq79_&sz=w1000" 
+                     alt="Decorativo" 
+                     class="w-full h-full object-cover object-left">
+            </div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl">
+                    <div class="inline-flex items-center gap-2 mb-6 border-l-4 border-cda-orange pl-4">
+                        <span class="text-cda-blue font-bold tracking-wide uppercase text-sm">Desde 1986</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                        Soluciones Confiables <br>
+                        <span class="text-cda-blue">para un Mundo Digital.</span>
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl text-slate-500 font-light mb-8 max-w-2xl leading-relaxed">
+                        Más de 40 años transformando negocios a través de servicios profesionales de IT, asegurando calidad, escalabilidad y compromiso.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <div class="flex items-center gap-3 bg-slate-50 px-5 py-3 rounded-lg border border-slate-200">
+                            <i class="fa-solid fa-award text-cda-orange text-2xl"></i>
+                            <div>
+                                <span class="block text-slate-900 font-bold leading-none">+40 Años</span>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">de Trayectoria</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-slate-50 px-5 py-3 rounded-lg border border-slate-200">
+                            <i class="fa-solid fa-earth-americas text-cda-blue text-2xl"></i>
+                            <div>
+                                <span class="block text-slate-900 font-bold leading-none">Presencia Regional</span>
+                                <span class="text-xs text-slate-500 uppercase tracking-wide">LATAM & Europa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EL GRUPO CDA (METRICS) -->
+        <section class="bg-cda-blue py-16 md:py-20 text-white">
+            <div class="container mx-auto px-6">
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold mb-2">El Grupo CDA en Cifras</h2>
+                    <p class="text-blue-100 font-light text-lg">Respaldo operativo y escala para grandes desafíos.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center md:text-left">
+                    <div class="border-t border-blue-400 pt-6">
+                        <span class="block text-4xl md:text-5xl font-bold mb-2">+600</span>
+                        <span class="text-sm md:text-base text-blue-100 uppercase tracking-wide font-medium">Profesionales IT</span>
+                    </div>
+                    <div class="border-t border-blue-400 pt-6">
+                        <span class="block text-4xl md:text-5xl font-bold mb-2">+70</span>
+                        <span class="text-sm md:text-base text-blue-100 uppercase tracking-wide font-medium">Empresas Líderes</span>
+                    </div>
+                    <div class="border-t border-blue-400 pt-6">
+                        <span class="block text-4xl md:text-5xl font-bold mb-2">+1.4M</span>
+                        <span class="text-sm md:text-base text-blue-100 uppercase tracking-wide font-medium">Horas Anuales</span>
+                    </div>
+                    <div class="border-t border-blue-400 pt-6">
+                        <span class="block text-4xl md:text-5xl font-bold mb-2">6</span>
+                        <span class="text-sm md:text-base text-blue-100 uppercase tracking-wide font-medium">Sedes Internacionales</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUESTROS SERVICIOS -->
+        <section class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 max-w-3xl mx-auto">
+                    <span class="text-cda-orange font-bold uppercase tracking-widest text-xs mb-2 block">Qué Hacemos</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Servicios Integrales de Tecnología</h2>
+                    <p class="text-slate-600">Cubrimos todo el ciclo de vida del desarrollo de software, en todas las tecnologías y para todas las industrias.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border-t-4 border-cda-blue group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-cda-blue transition-colors duration-300">
+                            <i class="fa-solid fa-vial-circle-check text-cda-blue text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">QA & Testing</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Aseguramiento de la calidad de software funcional y no funcional. Testing Manual y Automatizado.</p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border-t-4 border-cda-orange group">
+                        <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-cda-orange transition-colors duration-300">
+                            <i class="fa-solid fa-code text-cda-orange text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Software Factory</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Desarrollo a medida con metodologías ágiles o tradicionales. Mantenimiento evolutivo y correctivo.</p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border-t-4 border-cda-blue group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-cda-blue transition-colors duration-300">
+                            <i class="fa-solid fa-people-group text-cda-blue text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Staff Augmentation IT</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Provisión de talento especializado para integrarse a sus equipos internos. Flexibilidad y escalabilidad.</p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border-t-4 border-cda-blue group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-cda-blue transition-colors duration-300">
+                            <i class="fa-solid fa-robot text-cda-blue text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Automatización de Pruebas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Estrategias de automation para reducir el time-to-market y asegurar la regresión continua.</p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border-t-4 border-cda-blue group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-cda-blue transition-colors duration-300">
+                            <i class="fa-solid fa-server text-cda-blue text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Infraestructura y Soporte</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Gestión de entornos, DevOps, Cloud Computing y soporte técnico de nivel 1, 2 y 3.</p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border-t-4 border-cda-blue group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6 group-hover:bg-cda-blue transition-colors duration-300">
+                            <i class="fa-solid fa-lightbulb text-cda-blue text-xl group-hover:text-white transition-colors"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Consultoría Tecnológica</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Diagnósticos, transformación digital y arquitectura de soluciones empresariales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPROMISO CON LA CALIDAD -->
+        <section class="py-16 bg-white border-y border-gray-100">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-slate-900 mb-6">Compromiso Certificado con la Calidad</h2>
+                        <p class="text-slate-600 mb-6 text-lg leading-relaxed">
+                            En CDA, la calidad no es una promesa, es un proceso auditado. Nuestros procesos de producción de software y servicios cumplen con los más altos estándares internacionales.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <i class="fa-solid fa-check-circle text-cda-blue mt-1"></i>
+                                <div>
+                                    <strong class="text-slate-800 block">ISO 9001:2015</strong>
+                                    <span class="text-slate-500 text-sm">Sistema de Gestión de Calidad.</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <i class="fa-solid fa-check-circle text-cda-blue mt-1"></i>
+                                <div>
+                                    <strong class="text-slate-800 block">ISO 90003</strong>
+                                    <span class="text-slate-500 text-sm">Ingeniería de Software y Gestión de Calidad en proyectos IT.</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 bg-slate-50 p-8 rounded-xl border border-slate-100 flex flex-col items-center text-center">
+                        <i class="fa-solid fa-certificate text-6xl text-slate-300 mb-4"></i>
+                        <p class="text-slate-500 italic max-w-sm">"Nuestra certificación abarca el diseño, desarrollo, pruebas, mantenimiento y comercialización de software."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EMPRESAS QUE CONFÍAN EN CDA -->
+        <section class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Empresas que confían en CDA</h2>
+                <p class="text-slate-500 mb-12">Socios estratégicos en diversos sectores e industrias.</p>
+                
+                <!-- AJUSTE: Contenedor más pequeño (max-w-3xl) -->
+                <div class="bg-white rounded-2xl shadow-sm p-6 md:p-10 border border-slate-100 max-w-3xl mx-auto">
+                    <!-- Solución robusta para imagen de clientes -->
+                    <img src="https://drive.google.com/thumbnail?id=1e9G2d9EXEmEugqQERFnB-NdKj2Fmix7z&sz=w1000" 
+                         alt="Clientes y Referencias Comerciales CDA" 
+                         class="w-full h-auto object-contain">
+                </div>
+            </div>
+        </section>
+
+        <!-- ANTECEDENTES Y EXPERIENCIA -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row gap-16">
+                    <div class="md:w-1/3">
+                        <span class="text-cda-orange font-bold uppercase tracking-widest text-xs mb-2 block">Track Record</span>
+                        <h2 class="text-3xl font-bold text-slate-900 mb-6">Experiencia Comprobada</h2>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            Hemos acompañado a organizaciones en sus proyectos más críticos, garantizando continuidad operativa y evolución tecnológica.
+                        </p>
+                        <!-- Decorative element usage -->
+                        <div class="h-2 w-24 bg-cda-blue rounded-full"></div>
+                    </div>
+                    
+                    <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="border-l-4 border-slate-200 pl-6 py-2">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">Banca y Finanzas</h4>
+                            <p class="text-slate-600 text-sm">Proveedores estratégicos de Bancos líderes en LATAM para sistemas Core y canales digitales.</p>
+                        </div>
+                        <div class="border-l-4 border-slate-200 pl-6 py-2">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">Proyectos Multi-país</h4>
+                            <p class="text-slate-600 text-sm">Gestión centralizada de servicios para corporaciones con presencia regional unificada.</p>
+                        </div>
+                        <div class="border-l-4 border-slate-200 pl-6 py-2">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">Sistemas Críticos</h4>
+                            <p class="text-slate-600 text-sm">Experiencia en entornos de alta disponibilidad y transaccionalidad crítica.</p>
+                        </div>
+                        <div class="border-l-4 border-slate-200 pl-6 py-2">
+                            <h4 class="font-bold text-lg text-slate-800 mb-2">QA & Testing Office</h4>
+                            <p class="text-slate-600 text-sm">Implementación de oficinas de calidad transversales a toda la organización del cliente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRESENCIA INTERNACIONAL -->
+        <section class="py-16 bg-cda-dark text-white relative overflow-hidden">
+            <!-- Solución robusta para imagen decorativa de fondo -->
+            <img src="https://drive.google.com/thumbnail?id=1vDq_GDXI27ICa49TRebwZnS8kXinq79_&sz=w1000" 
+                 class="absolute top-0 right-0 w-64 h-full object-cover opacity-5 pointer-events-none" 
+                 alt="">
+
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h2 class="text-2xl font-bold mb-10">Presencia Regional</h2>
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                    <!-- AJUSTE: Banderas con iconos reales -->
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full flex items-center gap-3 hover:border-cda-blue transition-colors">
+                        <img src="https://flagcdn.com/w40/ar.png" srcset="https://flagcdn.com/w80/ar.png 2x" width="24" alt="Argentina">
+                        <span class="text-sm font-medium">Argentina</span>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full flex items-center gap-3 hover:border-cda-blue transition-colors">
+                        <img src="https://flagcdn.com/w40/uy.png" srcset="https://flagcdn.com/w80/uy.png 2x" width="24" alt="Uruguay">
+                        <span class="text-sm font-medium">Uruguay</span>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full flex items-center gap-3 hover:border-cda-blue transition-colors">
+                        <img src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="24" alt="Chile">
+                        <span class="text-sm font-medium">Chile</span>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full flex items-center gap-3 hover:border-cda-blue transition-colors">
+                        <img src="https://flagcdn.com/w40/pe.png" srcset="https://flagcdn.com/w80/pe.png 2x" width="24" alt="Perú">
+                        <span class="text-sm font-medium">Perú</span>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full flex items-center gap-3 hover:border-cda-blue transition-colors">
+                        <img src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="24" alt="México">
+                        <span class="text-sm font-medium">México</span>
+                    </div>
+                    <div class="bg-slate-800 border border-slate-700 px-6 py-3 rounded-full flex items-center gap-3 hover:border-cda-blue transition-colors">
+                        <img src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="24" alt="España">
+                        <span class="text-sm font-medium">España</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR QUÉ ELEGIR CDA -->
+        <section class="py-24 bg-gradient-to-br from-white to-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-12">¿Por qué elegir CDA?</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                        <div class="p-6">
+                            <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm text-cda-blue text-2xl border border-gray-100">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 mb-2">Relaciones de Largo Plazo</h3>
+                            <p class="text-sm text-slate-600">Priorizamos el vínculo y el entendimiento profundo del negocio del cliente.</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm text-cda-orange text-2xl border border-gray-100">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 mb-2">Solidez y Escala</h3>
+                            <p class="text-sm text-slate-600">Capacidad para absorber picos de demanda y proyectos de gran envergadura.</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm text-cda-blue text-2xl border border-gray-100">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 mb-2">Equipos Estables</h3>
+                            <p class="text-sm text-slate-600">Baja rotación y alta especialización técnica en nuestros profesionales.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white px-8 py-6 rounded-lg shadow-sm border-l-4 border-cda-blue inline-block mx-auto">
+                        <p class="text-xl md:text-2xl font-light text-slate-700">
+                            Potenciamos tu negocio con tecnología <span class="font-semibold text-cda-blue">confiable</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER INSTITUCIONAL ACTUALIZADO -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 mb-12">
+                <!-- Logo -->
+                <div class="mb-4 md:mb-0">
+                    <img src="https://drive.google.com/thumbnail?id=1UomK2PgHz09yWMXjdLrhDADxWFqbfZE4&sz=w1000" 
+                         alt="CDA Logo Footer" 
+                         class="h-10 opacity-90 grayscale hover:grayscale-0 transition-all duration-300">
+                </div>
+                
+                <!-- Contact Links -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12 items-center md:items-start">
+                    
+                    <!-- Website -->
+                    <a href="https://www.cda.com.ar" target="_blank" class="group flex items-center gap-3 text-slate-600 hover:text-cda-blue transition-colors">
+                        <div class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                            <i class="fa-solid fa-globe text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Sitio Web</span>
+                            <span class="font-medium">www.cda.com.ar</span>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/company/cda-informatica" target="_blank" class="group flex items-center gap-3 text-slate-600 hover:text-[#0077b5] transition-colors">
+                        <div class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                            <i class="fa-brands fa-linkedin-in text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Síguenos</span>
+                            <span class="font-medium">CDA Informática</span>
+                        </div>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/525520295382" target="_blank" class="group flex items-center gap-3 text-slate-600 hover:text-[#25D366] transition-colors">
+                        <div class="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-green-50 transition-colors">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-xs font-bold uppercase tracking-wider text-slate-400">Contacto Directo</span>
+                            <span class="font-medium">Chat WhatsApp</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
+                <p>&copy; 2026 CDA. Todos los derechos reservados.</p>
+                <p>Propuesta Institucional – Uso Corporativo</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
